@@ -1,0 +1,197 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+  font-family: "Montserrat";
+  text-align: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Roboto", sans-serif;
+}
+
+p {
+  color: #8f8f8f;
+}
+
+/* Headings */
+
+.big-heading {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-size: 2.8rem;
+  line-height: 1.5;
+}
+.small-heading {
+  font-family: "Roboto", sans-serif;
+  font-weight: 800;
+  font-size: 2.2rem;
+  line-height: 1.5;
+}
+
+.section-heading {
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+/* Containers */
+
+.container-fluid {
+  padding: 4% 15%;
+}
+
+/* Sections */
+
+.colored-section {
+  background: rgb(13, 65, 125);
+  background: linear-gradient(
+    36deg,
+    rgba(13, 65, 125, 1) 0%,
+    rgba(19, 150, 189, 1) 100%
+  );
+  color: #fff;
+}
+
+.white-section {
+  background-color: #fff;
+}
+
+/* Navigation Bar */
+
+.navbar {
+  padding: 0 0 4.5rem;
+}
+
+.navbar-brand {
+  font-family: "Ubuntu";
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.nav-item {
+  padding: 0 18px;
+}
+
+.nav-link {
+  font-size: 1.2rem;
+  font-family: "Montserrat-Light";
+}
+
+/* Buttons */
+
+.download-button {
+  margin: 5% 3% 3% 0;
+}
+
+/* Title Section */
+
+#title {
+  background-color: #0d417d;
+  color: #fff;
+  text-align: left;
+}
+
+#title .container-fluid {
+  padding: 1% 8% 7%;
+}
+
+/* Title Image */
+
+.title-image {
+  width: 88%;
+  position: absolute;
+  right: 0%;
+}
+
+/* Features Section */
+
+#features {
+  position: relative;
+}
+
+.feature-title {
+  font-size: 1.5rem;
+}
+
+.feature-box {
+  padding: 4.5%;
+}
+
+.icon {
+  color: #1396bd;
+  margin-bottom: 1rem;
+}
+
+.icon:hover {
+  color: #0d417d;
+}
+
+/* login Section */
+
+#login p {
+  color: #fff;
+}
+
+.iconClient {
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.iconClient:hover {
+  color: #1396bd;
+}
+.iconAgent {
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.iconAgent:hover {
+  color: #ff9626;
+}
+.login-text {
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+.login-box {
+  padding: 4.5%;
+  background: transparent;
+  border-color: #fff !important;
+  border-width: 3px !important;
+  border-radius: 10px;
+}
+
+/* press section */
+
+#press {
+  padding-bottom: 3%;
+}
+
+.press-logo {
+  width: 15%;
+  margin: 20px 20px 50px;
+}
+
+/* About Section */
+#team h5 {
+  color: #000;
+}
+/* Footer Section */
+
+.social-icon {
+  margin: 20px 10px;
+}
+
+@media (max-width: 1028px) {
+  #title {
+    text-align: center;
+  }
+
+  .title-image {
+    position: static;
+    transform: rotate(0);
+  }
+}
