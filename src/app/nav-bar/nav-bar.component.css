@@ -1,0 +1,23 @@
+@media (min-width: 991.98px) {
+  main {
+    padding-left: 240px;
+  }
+}
+.navbar {
+  padding: 0.3rem;
+  background-color: #e9ecf0;
+}
+
+i {
+  color: #0d417d;
+  padding-right: 2px;
+  text-align: left;
+}
+.navbar-brand {
+  font-family: "Ubuntu";
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.nav-link {
+  color: #0d417d !important;
+}
