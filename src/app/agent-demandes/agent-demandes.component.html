@@ -1,0 +1,53 @@
+<div class="container-fluid">
+
+  <h1>Demandes</h1>
+
+  <ul class="nav nav-tabs">
+    <li class="nav-item">
+      <a class="nav-link active" data-toggle="tab" href="#demandes-comptes">Demandes de création de comptes</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="tab" href="#demandes-normales">Autres</a>
+    </li>
+  </ul>
+
+  <div class="tab-content">
+    <div class="tab-pane active" id="demandes-comptes">
+
+   
+      <ul class="list-group">
+        <li class="list-group-item list-group-item-action" *ngFor="let notification of recharges">
+          <div class="row">
+            <div class="col-9">
+              <p class="mb-0">  {{ notification.message }}</p>
+              <small>{{ notification.name }}</small>
+            </div>
+            <div class="col-3 d-flex justify-content-end">
+              <button class="btn btn-sm btn-outline-secondary border-0">visualiser</button>
+              <button class="btn btn-sm btn-outline-secondary accept-btn border-0">accepter</button>
+              <button class="btn btn-sm btn-outline-danger border-0">refuser</button>
+            </div>
+          </div>
+        </li>
+      </ul>
+      
+    </div>
+    <div class="tab-pane" id="demandes-normales">
+      
+      <ul class="list-group">
+        <li class="list-group-item list-group-item-action" *ngFor="let notification of recharges">
+          <div class="row">
+            <div class="col-9">
+              <p class="mb-0">  {{ notification.message }}</p>
+              <small>{{ notification.name }}</small>
+            </div>
+            <div class="col-3 d-flex justify-content-end">
+              <button class="btn btn-sm btn-outline-secondary border-0 ">visualiser</button>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+</div>

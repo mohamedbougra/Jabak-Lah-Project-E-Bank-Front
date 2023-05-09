@@ -14,6 +14,11 @@ import { AgentNavMenuComponent } from "./agent-nav-menu/agent-nav-menu.component
 import { AgentLoginComponent } from "./agent-login/agent-login.component";
 import { AdminNavMenuComponent } from "./admin-nav-menu/admin-nav-menu.component";
 import { AdminLoginComponent } from "./admin-login/admin-login.component";
+import { ClientHistoriqueComponent } from './client-historique/client-historique.component';
+import { ClientNotificationComponent } from './client-notification/client-notification.component';
+import { ClientSignupComponent } from './client-signup/client-signup.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { AgentDemandesComponent } from './agent-demandes/agent-demandes.component';
 
 @NgModule({
   declarations: [
@@ -29,8 +34,12 @@ import { AdminLoginComponent } from "./admin-login/admin-login.component";
     AgentLoginComponent,
     AdminNavMenuComponent,
     AdminLoginComponent,
+    ClientHistoriqueComponent,
+    ClientNotificationComponent,
+    ClientSignupComponent,
+    AgentDemandesComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, FormsModule],
+  imports: [BrowserModule, AppRoutingModule, FormsModule,ReactiveFormsModule],
   providers: [],
   bootstrap: [AppComponent],
 })

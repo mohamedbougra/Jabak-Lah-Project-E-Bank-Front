@@ -1,0 +1,67 @@
+<div class="container-fluid">
+  <!-- nav bar -->
+  <app-nav-bar></app-nav-bar>
+  <!-- slide bar -->
+  <div class="container-fluid">
+    <div class="row no-gutters">
+      <div class="side col-12 col-md-2">
+        <app-nav-menu></app-nav-menu>
+      </div>
+      <div class="col-12 col-md-10">
+        <div class="content">
+          <!--TODO your title -->
+          <h2><i class="fa-solid fa-bell" style="color: #070808;"></i>
+            Notifications</h2>
+          <div>
+            <div class="content2">
+              <!-- TODO add contient -->
+             
+                  <div class="card-body">
+                    <h5><i class="fa fa-credit-card"></i> Recharges</h5>
+                    <ul class="list-group shadow">
+                      <li class="list-group-item list-group-item-action" *ngFor="let notification of recharges">
+                        <div class="row">
+                          <div class="col-9">
+                            <p class="mb-0">{{ notification.message }}</p>
+                            <small>{{ notification.date | date: 'dd/MM/yyyy' }}</small>
+                          </div>
+                          <div class="col-3 d-flex justify-content-end"> <!-- Ajout de la classe d-flex et justify-content-end -->
+                            <button class="btn btn-sm btn-outline-secondary border-0">Marquer comme lu</button>
+                            <button class="btn btn-sm btn-outline-danger ml-2 border-0">Supprimer</button> <!-- Ajout de la classe ml-2 pour un peu d'espace entre les boutons -->
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                    <br>
+                    <h5><i class="fa fa-file-invoice"></i>  Paiements de factures</h5>
+                    <ul class="list-group shadow">
+                      <li class="list-group-item list-group-item-action" *ngFor="let notification of paiementsFactures">
+                        <div class="row">
+                          <div class="col-9" >
+                            <p class="mb-0">  {{ notification.message }}</p>
+                            <small>{{ notification.date | date: 'dd/MM/yyyy' }}</small>
+                          </div>
+                          <div class="col-3 d-flex justify-content-end"> <!-- Ajout de la classe d-flex et justify-content-end -->
+                            <button class="btn btn-sm btn-outline-secondary border-0">Marquer comme lu</button>
+                            <button class="btn btn-sm btn-outline-danger ml-2 border-0">Supprimer</button> <!-- Ajout de la classe ml-2 pour un peu d'espace entre les boutons -->
+                          </div>
+              
+              
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+               
+            
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+

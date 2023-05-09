@@ -1,0 +1,53 @@
+
+
+<div class="container-fluid">
+  <!-- nav bar -->
+  <app-nav-bar></app-nav-bar>
+  <!-- slide bar -->
+  <div class="container-fluid">
+    <div class="row no-gutters">
+      <div class="side col-12 col-md-2">
+        <app-nav-menu></app-nav-menu>
+      </div>
+      <div class="col-12 col-md-10">
+        <div class="content">
+          <!--TODO your title -->
+          <h4><i class="fa fa-credit-card"></i> Historique des opérations</h4>
+          <div>
+            <div class="content2">
+              <!-- TODO add contient -->
+              <div class="container">
+                
+                <div class="table-responsive shadow">
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th>Operation</th>
+                        <th>Type</th>
+                        <th>Date</th>
+                        <th>Montant</th>
+                        <th>Benificaire</th>
+                        <th>   Delete      </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr *ngFor="let item of data">
+                        <td>{{ item.operation }}</td>
+                        <td>{{ item.type }}</td>
+                        <td>{{ item.date | date: 'dd/MM/yyyy' }}</td>
+                        <td>{{ item.montant }} DH</td>
+                        <td>{{ item.benificaire }}</td>
+                        <td>
+                          <button class="btn btn-sm btn-outline-danger ml-2 border-0">Supprimer</button>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              
+      </div>
+    </div>
+  </div>
+</div>
+ 
