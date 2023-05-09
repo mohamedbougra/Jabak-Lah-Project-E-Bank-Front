@@ -80,10 +80,90 @@ p {
   font-family: "Montserrat-Light";
 }
 
+/* nav-bar-client  */
+app-nav-bar .navbar {
+  padding: 0.3rem;
+  background-color: #e9ecf0;
+}
+
+app-nav-bar i {
+  color: #0d417d;
+  padding-right: 2px;
+  text-align: left;
+}
+app-nav-bar .nav-link {
+  color: #0d417d !important;
+}
+/* nav-bar-agent  */
+.agent app-nav-bar .navbar {
+  padding: 0.3rem;
+  background-color: #fdf1e7;
+}
+
+.agent app-nav-bar i {
+  color: #f36806;
+  padding-right: 2px;
+  text-align: left;
+}
+.agent app-nav-bar .nav-link {
+  color: #f36806 !important;
+}
+
+/* nav-bar-admin  */
+
+.admin app-nav-bar .navbar {
+  padding: 0.3rem;
+  background-color: #f4fdfc;
+}
+
+.admin app-nav-bar i {
+  color: #0ea293;
+  padding-right: 2px;
+  text-align: left;
+}
+.admin app-nav-bar .nav-link {
+  color: #0ea293 !important;
+}
 /* Buttons */
 
 .download-button {
   margin: 5% 3% 3% 0;
+}
+/* clinet buttons */
+.client-button {
+  background-color: #0d417d;
+  color: #fff;
+  margin: 3% 3% 3% 0;
+}
+.cancel-client-button,
+.client-button:hover {
+  color: #0d417d;
+  background-color: #cdeaf3;
+  margin: 3% 3% 3% 0;
+}
+/* Agent buttons */
+.agent-button {
+  background-color: #f97b22;
+  color: #000;
+  margin: 3% 3% 3% 0;
+}
+.cancel-agent-button,
+.agent-button:hover {
+  color: #000;
+  background-color: #ffd6b8;
+  margin: 3% 3% 3% 0;
+}
+/* Adminn buttons */
+.admin-button {
+  background-color: #0ea293;
+  color: #fff;
+  margin: 3% 3% 3% 0;
+}
+.cancel-admin-button,
+.admin-button:hover {
+  color: #0ea293;
+  background-color: #eafdfc;
+  margin: 3% 3% 3% 0;
 }
 
 /* Title Section */
