@@ -1,0 +1,38 @@
+<div class="container-fluid">
+  <div class="row widget">
+    <div class="col-md-3">
+      <div class="padding">
+        <div class="paddin">
+          <div class="nom">{{ nom }}</div>
+          <div class="prenom">{{ prenom }}</div>
+        </div>
+        <div class="btn-group-vertical  w-100">
+          <button class="btn  btn-lg btn-block" (click)="showForm('account')">Account</button>
+          <button class="btn  btn-lg btn-block" (click)="showForm('password')">Password</button>
+          <button class="btn  btn-lg btn-block" (click)="showForm('security')">Security and Privacy</button>
+          <button class="btn  btn-lg btn-block" (click)="showForm('demands')">Demands</button>
+          <button class="btn  btn-lg btn-block" (click)="showForm('notifications')">Notifications</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-9">
+      <div [ngSwitch]="activeForm">
+        <ng-container *ngSwitchCase="'account'">
+            <app-account-form></app-account-form>    
+        </ng-container>
+        <ng-container *ngSwitchCase="'password'">
+          <!-- <app-password-form></app-password-form> -->
+        </ng-container>
+        <ng-container *ngSwitchCase="'security'">
+          <!-- <app-security-form></app-security-form> -->
+        </ng-container>
+        <ng-container *ngSwitchCase="'demands'">
+          <!-- <app-demands-form></app-demands-form> -->
+        </ng-container>
+        <ng-container *ngSwitchCase="'notifications'">
+          <!-- <app-notifications-form></app-notifications-form> -->
+        </ng-container>
+      </div>
+    </div>
+  </div>
+</div>

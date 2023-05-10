@@ -1,0 +1,55 @@
+<div class="container-fluid">
+  <!-- nav bar -->
+  <app-nav-bar></app-nav-bar>
+  <!-- slide bar -->
+  <div class="container-fluid">
+    <div class="row no-gutters">
+      <div class="side col-12 col-md-2">
+        <app-nav-menu></app-nav-menu>
+      </div>
+      <div class="col-12 col-md-10">
+        <div class="content">
+          <!--TODO your title -->
+          <h2>Compte</h2>
+          <div>
+            <div class="content2">
+              <div class="container">
+                <div class="column-left">
+                  <div class="account-type">
+                    <button type="button" class="btn btn-primary" ngbTooltip="" (click)="selectAccount('compte-chèques')"><i class="fa-solid fa-money-check-dollar"></i>
+                      <div class="compte-font">Compte Chèques</div>
+                      <div class="num-font">Numéro</div>
+                    </button>
+                    <button type="button" class="btn btn-primary" ngbTooltip="" (click)="selectAccount('compte-épargne')"><i class="fa-solid fa-piggy-bank"></i>
+                      <div class="compte-font">Compte Épargne</div>
+                      <div class="num-font">Numéro</div>
+                    </button>
+                  </div>
+                </div>
+                <div class="column-middle">
+                  <h2 class="balance grey-text">Solde : {{accountBalance}}</h2>
+                  <h2 class="grey-text transactions-header">Historique des transactions</h2>
+            
+                  <ul class="transactions-list">
+                    <div *ngFor="let transaction of transactionHistory" class="transaction shadow p-3 mb-5 bg-white rounded">
+                      <i class="fa-regular fa-circle-check" style="color: #1f5122;"></i>
+                      <div class="transaction-details">
+                        <div class="transaction-description">{{ transaction.description }}</div>
+                        <div class="transaction-date">{{ transaction.date }}</div>
+                      </div>
+                      <div class="transaction-amount">{{ transaction.amount }}</div>
+                    </div>  
+                  </ul>
+            
+                </div>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+

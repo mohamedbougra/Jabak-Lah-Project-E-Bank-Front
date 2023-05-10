@@ -14,6 +14,10 @@ import { AgentNavMenuComponent } from "./agent-nav-menu/agent-nav-menu.component
 import { AgentLoginComponent } from "./agent-login/agent-login.component";
 import { AdminNavMenuComponent } from "./admin-nav-menu/admin-nav-menu.component";
 import { AdminLoginComponent } from "./admin-login/admin-login.component";
+import { ClientSettingComponent } from './client-setting/client-setting.component';
+import { ClientSettingAccountFormComponent } from './client-setting-account-form/client-setting-account-form.component';
+import { ClientCompteComponent } from './client-compte/client-compte.component';
+
 
 @NgModule({
   declarations: [
@@ -29,6 +33,9 @@ import { AdminLoginComponent } from "./admin-login/admin-login.component";
     AgentLoginComponent,
     AdminNavMenuComponent,
     AdminLoginComponent,
+    ClientCompteComponent,
+    ClientSettingComponent,
+    ClientSettingAccountFormComponent
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],
