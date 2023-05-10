@@ -1,0 +1,44 @@
+<div class="container-fluid">
+  <!-- nav bar -->
+  <app-nav-bar></app-nav-bar>
+  <!-- slide bar -->
+  <div class="container-fluid">
+    <div class="row no-gutters">
+      <div class="side col-12 col-md-2">
+        <app-nav-menu></app-nav-menu>
+      </div>
+      <div class="col-12 col-md-10">
+        <div class="content">
+          <!--TODO your title -->
+          <div>
+            <div class="content2">
+              <!-- TODO add contient -->
+              <div class="all">
+                <div class="welcome-container">
+                  <h1>Welcome {{ clientName }}</h1>
+                  <div *ngIf="showBalance" class="balance-container">
+                    <p>Your current balance is:</p>
+                    <h4 (click)="toggleShowBalance()" style="color: #0d417d; text-align: center;">{{ clientBalance }} $</h4>
+                  </div>
+                  <button class="balance-button" (click)="toggleShowBalance()">
+                    {{ showBalance ? 'Hide Balance' : 'Show Balance' }}
+                  </button>
+                </div>
+                <div class="charts-container">
+                <div class="chart-container">
+                  <h4>Salaire Evolution</h4>
+                  <canvas  id="MyChart" >{{ chart }}</canvas>
+                </div>
+                <div class="chart1-container">
+                  <h4>Transactions</h4>
+                
+                  <canvas  id="MyChart1" >{{ chart }}</canvas>
+                </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
