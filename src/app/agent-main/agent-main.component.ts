@@ -27,12 +27,12 @@ export class AgentMainComponent implements OnInit {
   createChart(){
   
     const chartDat_json = {
-      labels: ['2022-05-10', '2022-05-11', '2022-05-12','2022-05-13',
-               '2022-05-14', '2022-05-15', '2022-05-16','2022-05-17', ], 
+      labels: ['Oct', 'Aug', 'July','Jun',
+      'Jan', 'Feb', 'Mar', 'Apr',  ], 
       datasets: [
         {
           label: "Accepted Requests",
-          data: ['1000','0', '0', '0', '92',
+          data: ['100','0', '0', '0', '92',
                  '0', '573', '0'],
           backgroundColor: 'green'
         },
@@ -48,12 +48,13 @@ export class AgentMainComponent implements OnInit {
     this.chart = new Chart("MyChart", {
       type: 'line',
       data: {
-        labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May'], // x-axis labels for last 5 months
+        labels: ['2022-05-10', '2022-05-11', '2022-05-12','2022-05-13',
+        '2022-05-14'], // x-axis labels for last 5 months
         datasets: [
           {
             label: "Money Owned", // y-axis label
-            data: [1000, 2000, 1500, 3000, 2500], // money owned data for last 5 months
-            backgroundColor: '#0d417d'
+            data: [100, 200, 150, 300, 270], // money owned data for last 5 months
+            backgroundColor: '#f36806'
           }  
         ]
       },

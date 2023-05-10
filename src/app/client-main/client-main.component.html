@@ -15,13 +15,14 @@
               <!-- TODO add contient -->
               <div class="all">
                 <div class="welcome-container">
-                  <h1>Welcome {{ clientName }}</h1>
+                  <h1>Welcome <div style="color :  #0d417d ; display: inline">{{ clientName }}</div></h1>
                   <div *ngIf="showBalance" class="balance-container">
                     <p>Your current balance is:</p>
                     <h4 (click)="toggleShowBalance()" style="color: #0d417d; text-align: center;">{{ clientBalance }} $</h4>
                   </div>
-                  <button class="balance-button" (click)="toggleShowBalance()">
-                    {{ showBalance ? 'Hide Balance' : 'Show Balance' }}
+
+                  <button class="client-button btn" (click)="toggleShowBalance()" type="button">
+                    <i class="fas fa-chart-area fa-fw mr-3"></i> {{ showBalance ? 'Hide Balance' : 'Show Balance' }}
                   </button>
                 </div>
                 <div class="charts-container">

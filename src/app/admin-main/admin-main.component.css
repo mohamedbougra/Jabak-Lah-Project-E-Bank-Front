@@ -1,0 +1,73 @@
+.container-fluid {
+    padding: 0% 0% 7%;
+  }
+  .col {
+    margin: 0% !important;
+    padding: 0% !important;
+  }
+  .content {
+    padding: 5%;
+    text-align: left;
+  }
+  .content2 {
+    padding-top: 4%;
+  }
+  
+  
+.welcome-message {
+    text-align: center;
+    padding: 20px;
+  }
+  .chart-container {
+    width: 40%;
+    height: 70%;
+    margin-top: 50px; /* add some margin to separate from the welcome-container */
+    flex: 1;
+    padding: 20px;
+
+  }
+  .chart1-container {
+    width: 40%;
+    height: 65%;
+    margin-top: 50px; /* add some margin to separate from the welcome-container */
+    flex: 1;
+    padding-left: 80px;
+
+  }
+  .charts-container {
+    display: flex;
+  }
+  
+
+  .welcome-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px; /* add some margin to separate from the chart-container */
+  }
+  canvas {
+    width: 100% !important;
+    height: 100% !important;
+  }
+  .all {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+  }
+  
+  .balance-container {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .balance-button {
+    border: 2px solid rgb(20, 99, 144);
+    background-color: rgb(241, 241, 241);
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }

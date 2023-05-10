@@ -17,6 +17,7 @@ import { AdminLoginComponent } from "./admin-login/admin-login.component";
 import { ClientMainComponent } from './client-main/client-main.component';
 import { AgentMainComponent } from './agent-main/agent-main.component';
 import { AdminMainComponent } from './admin-main/admin-main.component';
+import { ClientNewPasswordComponent } from './client-new-password/client-new-password.component';
 
 @NgModule({
   declarations: [
@@ -35,6 +36,7 @@ import { AdminMainComponent } from './admin-main/admin-main.component';
     ClientMainComponent,
     AgentMainComponent,
     AdminMainComponent,
+    ClientNewPasswordComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],

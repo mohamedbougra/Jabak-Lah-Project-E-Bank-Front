@@ -19,7 +19,7 @@
   }
   .chart-container {
     width: 40%;
-    height: 60%;
+    height: 70%;
     margin-top: 50px; /* add some margin to separate from the welcome-container */
     flex: 1;
     padding: 20px;
