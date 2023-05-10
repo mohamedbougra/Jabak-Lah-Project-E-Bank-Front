@@ -1,3 +1,61 @@
-<p>
-  agent-list works!
-</p>
+<div class="container-fluid agent">
+  <!-- nav bar -->
+  <app-nav-bar></app-nav-bar>
+  <!-- slide bar -->
+  <div class="container-fluid">
+    <div class="row no-gutters">
+      <div class="side col-12 col-md-2">
+        <app-agent-nav-menu></app-agent-nav-menu>
+      </div>
+      <div class="col-12 col-md-10">
+        <div class="content">
+          <!--TODO your title -->
+          <h2>Liste Clients</h2>
+          <div>
+            <div class="content2">
+                  <div class="table-container">
+                    <table class="table table-bordered">
+                      <thead>
+                        <tr>
+                          <th>Nom</th>
+                          <th>Prénom</th>
+                          <th>Poste</th>
+                          <th>Email</th>
+                          <th>Tel</th>
+                          <th>Action</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr *ngFor="let agent of agents">
+                          <td>{{agent.nom}}</td>
+                          <td>{{agent.prenom}}</td>
+                          <td>{{agent.poste}}</td>
+                          <td>{{agent.email}}</td>
+                          <td>{{agent.tel}}</td>
+                          <td><div class="btn-group btn-group-sm mb-3" role="group" aria-label="Groupe de petits boutons">
+                            <button type="button" class="btn btn-primary border border-dark ">Visualiser</button>
+                            <button type="button" class="btn btn-primary  border border-dark">Modifier</button>
+                            <button type="button" class="btn btn-primary  border border-dark">Supprimer</button>
+                            </div>
+                          </td>
+              
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                     
+              </div>
+            </div>
+              <button class="agent-button btn" type="button">
+                <i class="fas fa-chart-area fa-fw mr-3"></i> button-agent
+              </button>
+              <button class="cancel-agent-button btn" type="button">
+                <i class="fas fa-chart-area fa-fw mr-3"></i> btn-ag-cancel
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+   
+ 

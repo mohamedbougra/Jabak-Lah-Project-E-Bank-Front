@@ -1,13 +1,16 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-agent-list',
-  templateUrl: './agent-list.component.html',
-  styleUrls: ['./agent-list.component.css']
+  selector: 'app-admin-list',
+  templateUrl: './admin-list.component.html',
+  styleUrls: ['./admin-list.component.css']
 })
-export class AgentListComponent implements OnInit {
+export class AdminListComponent implements OnInit {
 
   constructor() { }
+
+  ngOnInit() {
+  }
   agents=[
     {
     id:'1',
@@ -59,7 +62,5 @@ export class AgentListComponent implements OnInit {
     email: 'SoukainaZaid86@gmail.com',
   }
 ];
-  ngOnInit() {
-  }
 
 }
