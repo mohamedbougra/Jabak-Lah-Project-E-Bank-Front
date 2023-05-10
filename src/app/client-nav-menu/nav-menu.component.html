@@ -30,14 +30,46 @@
         <i class="fa-solid fa-clock-rotate-left fa-fw mr-3"></i>Historique
       </a>
       <!-- Todo Add Route -->
+       
+      <div class="factures">
       <a
+        routerLink="/YourRoute"
+        routerLinkActive="active"
+        ariaCurrentWhenActive="page"
+        class="list-group-item list-group-item-action py-2"
+        class="nav-link me-3 me-lg-0 dropdown-toggle hidden-arrow"
+        href="#"
+        id="navbarDropdownMenuLink"
+        data-toggle="dropdown"
+        aria-expanded="false"
+       >
+       <i class="fa-solid fa-file-lines fa-fw mr-3"></i>facteurs
+       </a>
+        <ul class="dropdown-menu dropdown-menu-end"  aria-labelledby="navbarDropdownMenuLink">
+          <li>
+            <a class="dropdown-item" href="#" routerLink="/effectuer-paiement" routerLinkActive="active">
+              Effectuer un paiement 
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#" routerLink="/effectuer-paiement" routerLinkActive="active">
+              Something else here
+            </a>
+          </li>
+        </ul>
+      
+    </div>
+    
+
+        
+     <!-- <a
         routerLink="/YourRoute"
         routerLinkActive="active"
         ariaCurrentWhenActive="page"
         class="list-group-item list-group-item-action py-2"
       >
         <i class="fa-solid fa-file-lines fa-fw mr-3"></i>facteurs
-      </a>
+      </a>-->
       <!-- Todo Add Route -->
       <a
         routerLink="/YourRoute"

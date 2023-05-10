@@ -1,0 +1,46 @@
+
+body {
+    background-color: rgb(248, 244, 244);
+    height: 100%;
+  }
+  .sousTitle{
+      color: grey;
+      margin-left: 6px;
+       margin-top: 60px;
+       margin-bottom: 30px;
+  }
+  .left{
+      
+  }
+  .image{
+      height: 500px;
+      width: 100px;
+  }
+  .card-img {
+      /* Ajoute des marges supérieure, inférieure et gauche */
+      text-align: center; /* Centre l'image horizontalement */
+      /*border-right: 1px solid #e6e5e5; */
+      margin-left: 15px;
+     margin-bottom: 20px;
+     margin-top: 9px;
+     
+    }
+    .card-title{
+      margin-top: 6px;
+      margin-left: 15px;
+    }
+    .card{
+      height: 200px;
+      width: 900px;
+    }
+    
+    .halima{
+      margin-left: 480px;
+      }
+    
+    
+  
+    .form{
+      margin-left: 60px;
+    }
+   

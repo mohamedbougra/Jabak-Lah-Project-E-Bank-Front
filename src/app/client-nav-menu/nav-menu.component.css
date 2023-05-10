@@ -28,3 +28,7 @@ i {
   overflow-x: hidden;
   overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
 }
+.factures{
+  margin-right: 65px;
+  
+}

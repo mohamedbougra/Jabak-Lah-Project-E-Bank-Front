@@ -1,0 +1,46 @@
+<html>
+<body>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-10">
+      <h3 class="sousTitle">  {{title}}  </h3>
+      
+      <div class="card">
+        <div class="card-body">
+          <div class="d-flex">
+            <div class="left">
+            <img class="card-img img-fluid" [src]="image" alt="Image" style="max-width: 200px; max-height:250px">
+            <h6 class="card-title">{{imageTitle}}</h6>
+          </div>
+            <div >
+              <h5 class="card-title"></h5>
+              <form class="form">
+                <div class="form-group">
+                <input placeholder="Nom et Prenom du donateur" type="text" class="form-control" id="input1">
+                </div>
+                <div class="form-group">
+                <input  placeholder="Montant du don (DH)" type="text" class="form-control" id="input2">
+                </div>
+                <div class="halima">
+                <div class="d-flex justify-content-end">
+                  <button style="background-color: rgb(252, 217, 123); border-color:rgb(252, 217, 123);color:black" type="submit" class="btn btn-primary mr-2">
+                  <i class="fa-solid fa-check"></i>  Valider</button>
+                  <button style="background-color:beige;border-color:beige; color:black" type="button" class="btn btn-secondary">
+                  <i class="fa-solid fa-xmark"></i>  Annuler</button>
+                </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+</body>
+
+</html>
