@@ -1,3 +1,96 @@
-<p>
-  admin-login works!
-</p>
+<section class="white-section" id="loginPage">
+  <div class="page-wrapper full-page">
+    <div class="container-fluid">
+      <div
+        class="page-content d-flex align-items-center justify-content-center"
+      >
+        <div class="row w-100 mx-0 auth-page">
+          <div class="col-md-6 col-xl-5 mx-auto">
+            <div class="card card-login">
+              <div class="row">
+                <div class="col-md-12">
+                  <div
+                    class="auth-form-wrapper py-5"
+                    style="padding-left: 2.5rem; padding-right: 2.5rem"
+                  >
+                    <a class="h4" style="color: #fff">JabkLah.com</a>
+                    <p class="" style="color: #e8e8e8">
+                      Welcome! Log in to your account.
+                    </p>
+                    <form #f="ngForm" (ngSubmit)="onSubmit(f)" novalidate>
+                      <div
+                        class="alert alert-danger"
+                        role="alert"
+                        *ngIf="successMessage"
+                      >
+                        {{ successMessage }}
+                      </div>
+                      <div
+                        class="alert alert-danger"
+                        role="alert"
+                        *ngIf="errorMessage"
+                      >
+                        {{ errorMessage }}
+                      </div>
+                      <div class="alert alert-danger" role="alert" *ngIf="">
+                        email is required
+                      </div>
+                      <div class="alert alert-danger" role="alert" *ngIf="">
+                        password is required
+                      </div>
+                      <div class="form-group">
+                        <input
+                          type="email"
+                          class="form-control"
+                          placeholder="email"
+                          name="email"
+                          [(ngModel)]="email"
+                          autofocus
+                          required
+                        />
+                      </div>
+                      <div class="form-group">
+                        <input
+                          type="password"
+                          class="form-control"
+                          placeholder="password"
+                          name="password"
+                          name="password"
+                          [(ngModel)]="password"
+                          required
+                        />
+                      </div>
+                      <div class="form-group">
+                        <button
+                          class="btn btn-outline-light"
+                          type="submit"
+                          style="border-radius: 1rem"
+                        >
+                          <i class="fa fa-spinner fa-spin" [hidden]="hidden"></i
+                          >Login
+                        </button>
+                        <a
+                          class=""
+                          [routerLink]="['/forget-password']"
+                          style="float: right; border-radius: 1rem; color: #fff"
+                          ><small>forget password</small></a
+                        >
+                      </div>
+                    </form>
+                    <a
+                      [routerLink]="['/register/verify']"
+                      class="d-block mt-3 text-decoration-none;"
+                      style="color: #fff"
+                    >
+                      <small>Don't have account? Sign up here</small>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

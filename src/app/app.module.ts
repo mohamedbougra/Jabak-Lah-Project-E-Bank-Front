@@ -16,6 +16,7 @@ import { AdminNavMenuComponent } from "./admin-nav-menu/admin-nav-menu.component
 import { AdminLoginComponent } from "./admin-login/admin-login.component";
 import { EffectuerPaiementComponent } from "./client-effectuer-paiement/effectuer-paiement.component";
 
+import { ClientNewPasswordComponent } from './client-new-password/client-new-password.component';
 
 @NgModule({
   declarations: [
