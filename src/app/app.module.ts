@@ -14,6 +14,8 @@ import { AgentNavMenuComponent } from "./agent-nav-menu/agent-nav-menu.component
 import { AgentLoginComponent } from "./agent-login/agent-login.component";
 import { AdminNavMenuComponent } from "./admin-nav-menu/admin-nav-menu.component";
 import { AdminLoginComponent } from "./admin-login/admin-login.component";
+import { ClientFactureComponent } from './client-facture/client-facture.component';
+import { AgentListComponent } from './agent-list/agent-list.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +31,8 @@ import { AdminLoginComponent } from "./admin-login/admin-login.component";
     AgentLoginComponent,
     AdminNavMenuComponent,
     AdminLoginComponent,
+    ClientFactureComponent,
+    AgentListComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],
