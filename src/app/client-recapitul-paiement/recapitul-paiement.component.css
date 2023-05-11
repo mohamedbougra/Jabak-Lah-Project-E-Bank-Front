@@ -13,22 +13,33 @@
          margin-bottom: 30px;
     }
   .card{
-    height: 420px;
+    height: 500px;
     width: 840px;
   }
-  
+  .recapituleTitle .card-title{
+    color: rgba(38, 50, 226, 0.568);
+  }
   
   .nom{
    margin-left: 100px;
   }
+  .recapi{
+    margin-left: 230px;
+  }
+  .d-flex{
+    margin-top: 40px;
+    
+  }
   
-  .title{
+  .title1{
     margin-bottom: 20px;
    border-bottom: 0.8px solid rgb(232, 232, 241);
+   color: gray;
   }
   .title2{
     margin-top: 60px;
     border-bottom: 0.8px  solid rgb(232, 232, 241);
+    color:gray ;
   }
   .btn{
     position: relative;

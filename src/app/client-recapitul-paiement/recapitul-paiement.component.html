@@ -2,7 +2,7 @@
 <div class="row no-gutters">
  
   <div class="side col-12 col-md-2">
-<app-nav-menu></app-nav-menu>
+   <app-nav-menu></app-nav-menu>
 </div>
   <div class="row">
     <div class="col-md-12">
@@ -13,7 +13,7 @@
             
             <div class="card">
               <div class="card-body">
-                <div class="title">{{title1}}</div>
+                <div class="title1">{{title1}}</div>
                 <div class="d-flex">
                   <div class="left">
                   <img class="card-img img-fluid" [src]="image" alt="Image" style="max-width: 200px; max-height:200px">
@@ -28,13 +28,17 @@
               </div> 
               <div class="title2">{{title2}}
               </div > 
-              <div class="key1"> <span  >Don Sidaction</span>
-                <span class="value1">{{value}} </span> 
+              <div class="recapituleTitle">
+              <div class="d-flex">
+              <div ><h6 class="card-title"> RÉFÉRENCE <br> <br> <p> {{ reference}}</p></h6>
               </div>
-              <div  class="key2"> <span >Total  </span>
-                <span class="value">{{value}} </span> 
+              
+              <div class="recapi"><h6 class="card-title">DESCRIPTION<br> <br><p> {{ description}} </p></h6>
               </div>
-            
+              <div class="recapi"><h6 class="card-title">PPRIX TTC<br> <br><p> {{prixTTC}}</p></h6>
+              </div>
+            </div>
+          </div>
                 <button class="client-button btn" type="button">
                 
                 <i class="fa-solid fa-check"></i>  Valider
