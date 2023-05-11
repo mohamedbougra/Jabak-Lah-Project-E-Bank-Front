@@ -31,53 +31,47 @@
       </a>
       <!-- Todo Add Route -->
        
-      <div class="factures">
       <a
         routerLink="/YourRoute"
         routerLinkActive="active"
         ariaCurrentWhenActive="page"
+        class="list-group-item list-group-item-action py-2" 
+       >
+       <i class="fa-solid fa-file-lines fa-fw mr-3"></i>facteurs
+       </a>
+      <!-- Todo Add Route -->
+      <a
         class="list-group-item list-group-item-action py-2"
         class="nav-link me-3 me-lg-0 dropdown-toggle hidden-arrow"
         href="#"
         id="navbarDropdownMenuLink"
         data-toggle="dropdown"
         aria-expanded="false"
-       >
-       <i class="fa-solid fa-file-lines fa-fw mr-3"></i>facteurs
-       </a>
-        <ul class="dropdown-menu dropdown-menu-end"  aria-labelledby="navbarDropdownMenuLink">
-          <li>
-            <a class="dropdown-item" href="#" routerLink="/effectuer-paiement" routerLinkActive="active">
-              Effectuer un paiement 
-            </a>
-          </li>
-          <li>
-            <a class="dropdown-item" href="#" routerLink="/effectuer-paiement" routerLinkActive="active">
-              Something else here
-            </a>
-          </li>
-        </ul>
-      
-    </div>
-    
+      >
+      <i class="fa-brands fa-cc-amazon-pay"></i>Operations
+      </a>
+     <ul class="dropdown-menu dropdown-menu-end"  aria-labelledby="navbarDropdownMenuLink">
+        <li>
+          <a class="dropdown-item" href="#" routerLink="/paiement" >
+            <i class="fa-sharp fa-solid fa-comments-dollar"></i>     Effectuer un paiement  
+          </a>
+        </li>
 
-        
-     <!-- <a
+        <li>
+          <a class="dropdown-item" href="#"  >
+            <i class="fa-sharp fa-solid fa-comments-dollar"></i>  Something else here
+          </a>
+        </li>
+      </ul>
+    
+         <!-- Todo Add Route -->
+      
+     <a
         routerLink="/YourRoute"
         routerLinkActive="active"
         ariaCurrentWhenActive="page"
-        class="list-group-item list-group-item-action py-2"
-      >
-        <i class="fa-solid fa-file-lines fa-fw mr-3"></i>facteurs
-      </a>-->
-      <!-- Todo Add Route -->
-      <a
-        routerLink="/YourRoute"
-        routerLinkActive="active"
-        ariaCurrentWhenActive="page"
-        class="list-group-item list-group-item-action py-2"
-      >
-        <i class="fas fa-calendar fa-fw mr-3"></i>Demande
+        class="list-group-item list-group-item-action py-2">
+          <i class="fas fa-calendar fa-fw mr-3"></i>Demande
       </a>
     </div>
   </div>

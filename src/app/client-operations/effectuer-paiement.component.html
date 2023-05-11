@@ -1,11 +1,12 @@
-<html>
-<body>
-
-<div class="container">
+<app-nav-bar></app-nav-bar>
+<div class="row no-gutters">
+ 
+  <div class="side col-12 col-md-2">
+<app-nav-menu></app-nav-menu>
+</div>
   <div class="row">
-    <div class="col-md-10">
+    <div class="col-md-12">
       <h3 class="sousTitle">  {{title}}  </h3>
-      
       <div class="card">
         <div class="card-body">
           <div class="d-flex">
@@ -24,10 +25,15 @@
                 </div>
                 <div class="halima">
                 <div class="d-flex justify-content-end">
-                  <button style="background-color: rgb(252, 217, 123); border-color:rgb(252, 217, 123);color:black" type="submit" class="btn btn-primary mr-2">
-                  <i class="fa-solid fa-check"></i>  Valider</button>
-                  <button style="background-color:beige;border-color:beige; color:black" type="button" class="btn btn-secondary">
-                  <i class="fa-solid fa-xmark"></i>  Annuler</button>
+                 
+                  <button class="client-button btn" type="button"   routerLink="/paiement-details" routerLinkActive="active">
+                    <i class="fa-solid fa-check"></i> Valider
+                  </button>
+                  <button class="cancel-client-button btn" type="button">
+                    <i class="fa-solid fa-xmark"></i> Annuler
+                  </button>
+                  
+                 
                 </div>
                 </div>
               </form>
@@ -36,11 +42,7 @@
         </div>
       </div>
     </div>
-  </div>
+  
+</div>
 </div>
 
-
-
-</body>
-
-</html>

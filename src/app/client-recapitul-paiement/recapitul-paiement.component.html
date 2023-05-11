@@ -1,0 +1,75 @@
+<app-nav-bar></app-nav-bar>
+<div class="row no-gutters">
+ 
+  <div class="side col-12 col-md-2">
+<app-nav-menu></app-nav-menu>
+</div>
+  <div class="row">
+    <div class="col-md-12">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-9">
+            <h3 class="sousTitle">  {{title}}  </h3>
+            
+            <div class="card">
+              <div class="card-body">
+                <div class="title">{{title1}}</div>
+                <div class="d-flex">
+                  <div class="left">
+                  <img class="card-img img-fluid" [src]="image" alt="Image" style="max-width: 200px; max-height:200px">
+                 </div>
+      
+                  <div class="nom"><h6 class="card-title">{{Creancier}} <br> <p>{{soutitle1}} </p></h6>
+                  </div>
+                  <div class="nom"><h6 class="card-title">{{Creance}} <br> <p>{{soutitle2}} </p></h6>
+                  </div>
+                  <div class="nom"><h6 class="card-title">{{ Donnateur}} <br> <p> {{soutitle3}} </p></h6>
+                  </div>
+              </div> 
+              <div class="title2">{{title2}}
+              </div > 
+              <div class="key1"> <span  >Don Sidaction</span>
+                <span class="value1">{{value}} </span> 
+              </div>
+              <div  class="key2"> <span >Total  </span>
+                <span class="value">{{value}} </span> 
+              </div>
+            
+                <button class="client-button btn" type="button">
+                
+                <i class="fa-solid fa-check"></i>  Valider
+              </button>
+              <button class="cancel-client-button btn" type="button">
+                <i class="fa-solid fa-xmark"></i> abandonner la transaction
+              </button>
+             
+           
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

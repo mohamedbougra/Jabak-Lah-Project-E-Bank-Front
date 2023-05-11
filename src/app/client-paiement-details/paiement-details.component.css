@@ -1,0 +1,53 @@
+.col-md-12{
+  margin-left: 60px;
+
+}
+body {
+    background-color: rgb(248, 244, 244);
+    height: 100%;
+  }
+  .sousTitle{
+      color: grey;
+      margin-left: 6px;
+       margin-top: 30px;
+       margin-bottom: 30px;
+  }
+.card{
+  height: 380px;
+  width: 840px;
+}
+
+
+.nom{
+ margin-left: 100px;
+}
+
+.title{
+  margin-bottom: 20px;
+ border-bottom: 0.8px solid rgb(232, 232, 241);
+}
+.title2{
+  margin-top: 60px;
+  border-bottom: 0.8px  solid rgb(232, 232, 241);
+}
+.btn{
+  position: relative;
+  right: -680px;
+  margin-top: 50px;
+}
+.key1{
+ color: blueviolet;
+ margin-top: 20px;
+}
+.key2{
+  color: blueviolet;
+  margin-top: 10px;
+ }
+.value{
+  position: relative;
+  right: -650px;
+}
+.value1{
+  position: relative;
+  right: -580px;
+}

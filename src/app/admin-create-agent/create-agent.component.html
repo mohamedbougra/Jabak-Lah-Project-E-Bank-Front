@@ -1,0 +1,121 @@
+<app-nav-bar></app-nav-bar>
+<div class="row no-gutters">
+      <div class="side col-12 col-md-2">
+        <app-admin-nav-menu></app-admin-nav-menu>
+      </div>
+
+     <div class="card">
+        <h5 class="titre"> Informations personnelles
+        </h5>
+  <div class="row">
+  <div class="halima"> 
+    <div class="col-md-6">
+
+      <div class="form-group">
+        <label for="nom" class="required">Nom </label>
+        <input type="text" class="form-control" id="nom"  required
+        [(ngModel)]="nom" placeholder="nom">
+      </div>
+
+      <div class="form-group">
+        <label for="cin" class="required">Piece d'identie </label>
+        <input type="text" class="form-control" id="cin" required
+        [(ngModel)]="cin"  placeholder="CIN">
+      </div>
+
+      <div class="form-group">
+        <label  class="required" for="dateNaissance">Date de naissance </label>
+        <input type="date" class="form-control" id="dateNaissance"  required
+        [(ngModel)]="dateDeNaissance" placeholder="Date de naissance">
+      </div>
+
+      <div class="form-group">
+        <label for="email" class="required">Email</label>
+        <input type="email" class="form-control" id="email" name="email" required
+        [(ngModel)]="email" placeholder="email"> 
+      </div>
+
+      <div class="form-group">
+        <label for="Telephone" class="required">Telephone</label>
+        <input type="Text" class="form-control" id="Telephone" name="Telephone" required
+        [(ngModel)]="telephone" placeholder="telephone">
+      </div>
+
+      <div class="form-group">
+        <label for="patente" class="required">N° du Patent</label>
+        <input type="text" class="form-control" id="patente" name="patente" required
+        placeholder="N° du patent" [(ngModel)]="patent">
+      </div>
+
+    </div>
+   </div>
+    <div class="masmar">
+      <div class="col-md-6">
+        <div class="form-group">
+          <label  class="required" for="prenom">Prénom </label>
+          <input type="text" class="form-control" id="prenom"  required
+          [(ngModel)]="prenom" placeholder="prenom">
+        </div>
+      
+        <div class="form-group">
+          <label  class="required" for="prenom">N° piece d'identite </label>
+          <input type="text" class="form-control" id="prenom"  required
+         [(ngModel)]="pienceIdentite"   placeholder="N° piece d'identite  ">
+        </div>
+
+        <div class="form-group">
+          <label  class="required" for="prenom">adresse</label>
+          <input type="text" class="form-control" id="prenom"  required
+          [(ngModel)]="adresse" placeholder="Entrez l'email de l'agent">
+        </div>
+
+        <div class="form-group">
+          <label  class="required" for="prenom">Confirmation Email</label>
+          <input type="text" class="form-control" id="prenom"  required
+          [(ngModel)]="confirmationEmail"  placeholder="Confirmer l'email">
+        </div>
+
+        <div class="form-group">
+          <label  class="required" for="prenom">N° d'immatriculation au registre de commerce </label>
+          <input type="text" class="form-control" id="prenom"  required
+          [(ngModel)]="registreCommerce" placeholder="Entrez le N° d'immatriculation"
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <h4 class="titre">Ajouter une pièce jointe</h4>
+  <form>
+    <div class="row">
+    <div class="halima1">
+     <div class="col-md-6">
+       <div class="form-group">
+        <label for="description" class="required">Description</label>
+        <input type="text" class="form-control" id="description" placeholder="Entrez une description"
+         [(ngModel)]="description">
+       </div>
+     </div>
+    </div>
+    <div class="masmar2">
+      <div class="col-md-6">
+        <div class="form-group">
+         <label for="pieceJointe" class="required"> Fichier</label>
+         <input type="file" class="form-control-file" id="fichier"  [(ngModel)]="fichier" placeholder="Ajouter un fichier">
+        </div>
+      </div>
+     </div>
+    <</div>
+        <div class="row">
+          <button class="admin-button btn" type="button">
+            <i class="fa-solid fa-check"></i> Enregistrer
+        
+          </button>
+        
+          <button class="cancel-admin-button btn" type="button">
+            <i class="fa-solid fa-check"></i>   Annuler
+          </button>
+        </div>
+  </form>
+  </div>
+</div>
