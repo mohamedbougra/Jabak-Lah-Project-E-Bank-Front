@@ -14,7 +14,14 @@ import { AgentNavMenuComponent } from "./agent-nav-menu/agent-nav-menu.component
 import { AgentLoginComponent } from "./agent-login/agent-login.component";
 import { AdminNavMenuComponent } from "./admin-nav-menu/admin-nav-menu.component";
 import { AdminLoginComponent } from "./admin-login/admin-login.component";
+
+import { EffectuerPaiementComponent } from "./client-operations/effectuer-paiement.component";
+
+
 import { ClientNewPasswordComponent } from './client-new-password/client-new-password.component';
+import { PaiementDetailsComponent } from './client-paiement-details/paiement-details.component';
+import { CreateAgentComponent } from "./admin-create-agent/create-agent.component";
+import { RecapitulPaiementComponent } from './client-recapitul-paiement/recapitul-paiement.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +37,12 @@ import { ClientNewPasswordComponent } from './client-new-password/client-new-pas
     AgentLoginComponent,
     AdminNavMenuComponent,
     AdminLoginComponent,
+    EffectuerPaiementComponent,
     ClientNewPasswordComponent,
+    PaiementDetailsComponent,
+    CreateAgentComponent,
+    RecapitulPaiementComponent,
+
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],

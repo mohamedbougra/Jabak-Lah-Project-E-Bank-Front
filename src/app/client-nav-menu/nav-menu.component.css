@@ -7,6 +7,7 @@
 
 i {
   color: #0d417d !important;
+  margin-right: 13px;
 }
 
 .list-group-item {
@@ -28,3 +29,4 @@ i {
   overflow-x: hidden;
   overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
 }
+

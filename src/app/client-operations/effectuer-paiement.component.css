@@ -1,0 +1,41 @@
+
+.col-md-12{
+  margin-left: 60px;
+
+}
+  .sousTitle{
+      color: grey;
+      margin-left: 6px;
+       margin-top: 60px;
+       margin-bottom: 30px;
+  }
+  
+  .image{
+      height: 500px;
+      width: 100px;
+  }
+  .card-img {
+      /* Ajoute des marges supérieure, inférieure et gauche */
+      text-align: center; /* Centre l'image horizontalement */
+      /*border-right: 1px solid #e6e5e5; */
+      margin-left: 15px;
+     margin-bottom: 20px;
+     margin-top: 9px;
+     
+    }
+    .card-title{
+      margin-top: 6px;
+      margin-left: 15px;
+    }
+    
+    
+    .halima{
+      margin-left: 200px;
+      }
+    
+    
+  
+    .form{
+      margin-left: 60px;
+    }
+   

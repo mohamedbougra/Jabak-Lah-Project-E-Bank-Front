@@ -1,0 +1,58 @@
+label.required:after {
+    content:"*";
+    color: red;
+  }
+ 
+  .col-md-6{
+    padding-top: 50px;
+   
+  }
+  .card{
+    margin-top: 20px ;
+    margin-left: 20px ;
+    margin-bottom: 20px ;
+    height: 1000px;
+    width: 1000px;
+  }
+  .titre{
+   padding-top: 25px;
+    margin-left: 50px;
+    border-bottom:  solid rgb(232, 232, 241);
+    color: #a8a2a2;
+  }
+  
+  input[type=text], input[type=email], input[type=file], input[type=number],input[type=date], select {
+    width: 400px;
+    height: 40px;
+    font-size: 16px;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+    margin-left: 2px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+ .halima{
+  margin-left: 50px;
+ }
+ .masmar{
+  margin-left: 20px;
+ }
+ .halima1{
+  margin-left: 50px;
+ }
+ .masmar1{
+  margin-left: 20px;
+ }
+  
+  
+  legend {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  .btn{
+    position: relative;
+    right: -680px;
+    margin-top: 50px;
+  }
+  

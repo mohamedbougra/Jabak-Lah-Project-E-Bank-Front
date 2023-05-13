@@ -1,0 +1,48 @@
+<app-nav-bar></app-nav-bar>
+<div class="row no-gutters">
+ 
+  <div class="side col-12 col-md-2">
+<app-nav-menu></app-nav-menu>
+</div>
+  <div class="row">
+    <div class="col-md-12">
+      <h3 class="sousTitle">  {{title}}  </h3>
+      <div class="card">
+        <div class="card-body">
+          <div class="d-flex">
+            <div class="left">
+            <img class="card-img img-fluid" [src]="image" alt="Image" style="max-width: 200px; max-height:250px">
+            <h6 class="card-title">{{imageTitle}}</h6>
+          </div>
+            <div >
+              <h5 class="card-title"></h5>
+              <form class="form">
+                <div class="form-group">
+                <input placeholder="Nom et Prenom du donateur" type="text" class="form-control" id="input1">
+                </div>
+                <div class="form-group">
+                <input  placeholder="Montant du don (DH)" type="text" class="form-control" id="input2">
+                </div>
+                <div class="halima">
+                <div class="d-flex justify-content-end">
+                 
+                  <button class="client-button btn" type="button"   routerLink="/paiement-details" routerLinkActive="active">
+                    <i class="fa-solid fa-check"></i> Valider
+                  </button>
+                  <button class="cancel-client-button btn" type="button">
+                    <i class="fa-solid fa-xmark"></i> Annuler
+                  </button>
+                  
+                 
+                </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+</div>
+</div>
+

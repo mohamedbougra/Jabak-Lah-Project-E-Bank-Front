@@ -1,0 +1,66 @@
+.col-md-12{
+    margin-left: 60px;
+  
+  }
+  body {
+      background-color: rgb(248, 244, 244);
+      height: 100%;
+    }
+    .sousTitle{
+        color: grey;
+        margin-left: 6px;
+         margin-top: 30px;
+         margin-bottom: 30px;
+    }
+  .card{
+    height: 500px;
+    width: 840px;
+  }
+  .recapituleTitle .card-title{
+    color: rgba(38, 50, 226, 0.568);
+  }
+  
+  .nom{
+   margin-left: 100px;
+  }
+  .recapi{
+    margin-left: 230px;
+  }
+  .d-flex{
+    margin-top: 40px;
+    
+  }
+  
+  .title1{
+    margin-bottom: 20px;
+   border-bottom: 0.8px solid rgb(232, 232, 241);
+   color: gray;
+  }
+  .title2{
+    margin-top: 60px;
+    border-bottom: 0.8px  solid rgb(232, 232, 241);
+    color:gray ;
+  }
+  .btn{
+    position: relative;
+    right: -380px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+  }
+  .key1{
+   color: blueviolet;
+   margin-top: 20px;
+  }
+  .key2{
+    color: blueviolet;
+    margin-top: 10px;
+   }
+  .value{
+    position: relative;
+    right: -650px;
+  }
+  .value1{
+    position: relative;
+    right: -580px;
+  }
+  
