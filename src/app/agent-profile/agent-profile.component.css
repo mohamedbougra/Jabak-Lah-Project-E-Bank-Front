@@ -1,0 +1,40 @@
+.container-fluid {
+    padding: 0% 0% 7%;
+  }
+  .col {
+    margin: 0% !important;
+    padding: 0% !important;
+  }
+  .content {
+    padding: 5%;
+    text-align: left;
+  }
+  .content2 {
+    padding-top: 4%;
+  }
+  .gradient-custom {
+    /* fallback for old browsers */
+    background: #f6d365;
+    
+    /* Chrome 10-25, Safari 5.1-6 */
+    /* background: -webkit-linear-gradient(to right bottom, rgb(101, 198, 246), rgb(151, 133, 253));
+    
+    
+    background: linear-gradient(to right bottom, rgb(125, 101, 246), rgb(40, 50, 242));  */
+
+    background: -webkit-linear-gradient(to right bottom, rgba(246, 211, 101, 1), rgba(253, 160, 133, 1));
+
+
+    background: linear-gradient(to right bottom, rgba(246, 211, 101, 1), rgba(253, 160, 133, 1)); 
+
+}
+
+.custom-container {
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+.font-h6{
+    font-size: 24px; 
+}  

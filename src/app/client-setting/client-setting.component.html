@@ -1,38 +1,106 @@
 <div class="container-fluid">
-  <div class="row widget">
-    <div class="col-md-3">
-      <div class="padding">
-        <div class="paddin">
-          <div class="nom">{{ nom }}</div>
-          <div class="prenom">{{ prenom }}</div>
-        </div>
-        <div class="btn-group-vertical  w-100">
-          <button class="btn  btn-lg btn-block" (click)="showForm('account')">Account</button>
-          <button class="btn  btn-lg btn-block" (click)="showForm('password')">Password</button>
-          <button class="btn  btn-lg btn-block" (click)="showForm('security')">Security and Privacy</button>
-          <button class="btn  btn-lg btn-block" (click)="showForm('demands')">Demands</button>
-          <button class="btn  btn-lg btn-block" (click)="showForm('notifications')">Notifications</button>
-        </div>
+  <!-- nav bar -->
+  <app-nav-bar></app-nav-bar>
+  <!-- slide bar -->
+  <div class="container-fluid">
+    <div class="row no-gutters">
+      <div class="side col-12 col-md-2">
+        <app-nav-menu></app-nav-menu>
       </div>
-    </div>
-    <div class="col-md-9">
-      <div [ngSwitch]="activeForm">
-        <ng-container *ngSwitchCase="'account'">
-            <app-account-form></app-account-form>    
-        </ng-container>
-        <ng-container *ngSwitchCase="'password'">
-          <!-- <app-password-form></app-password-form> -->
-        </ng-container>
-        <ng-container *ngSwitchCase="'security'">
-          <!-- <app-security-form></app-security-form> -->
-        </ng-container>
-        <ng-container *ngSwitchCase="'demands'">
-          <!-- <app-demands-form></app-demands-form> -->
-        </ng-container>
-        <ng-container *ngSwitchCase="'notifications'">
-          <!-- <app-notifications-form></app-notifications-form> -->
-        </ng-container>
+      <div class="col-12 col-md-10">
+        <div class="content">
+          <!--TODO your title -->
+          <h2>Parametres</h2>
+          <div>
+            <div class="content2">
+              <div class="container-fluid">
+                <div class="row widget">
+                  <div class="col-md-3 ">
+                    <div class="padding">
+                      <div class="paddin text-center">
+                        <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava1-bg.webp"
+                        alt="Avatar" class="img-fluid my-5" style="width: 100px; " />
+                        <div class="nom">{{ nom }} {{ prenom }}</div>
+                      </div>
+                      <div class="btn-group-vertical  w-100">
+                        <button class="btn  btn-lg btn-block" (click)="showForm('account')">Account</button>
+                        <button class="btn  btn-lg btn-block" (click)="showForm('password')">Password</button>
+                        <button class="btn  btn-lg btn-block" (click)="showForm('security')">Security and Privacy</button>
+                        <button class="btn  btn-lg btn-block" (click)="showForm('demands')">Demands</button>
+                        <button class="btn  btn-lg btn-block" (click)="showForm('notifications')">Notifications</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-9" *ngFor="let row of myTableData" style="padding-top: 60px;">
+                    <div [ngSwitch]="activeForm">
+                      <ng-container *ngSwitchCase="'account'">
+                        <!-- <app-account-form></app-account-form> -->
+                        <div class="row mt-2 balise" >
+                          <div class="col-md-6"><label class="labels font-label">Nom</label><input type="text" class="form-control" value="{{ row.Nom }}" readonly></div>
+                          <div class="col-md-6"><label class="labels font-label">Prenom</label><input type="text" class="form-control" value="{{ row.Prenom }}" readonly></div>
+                        </div>
+                        <div class="row mt-3">
+                          <div class="col-md-12 row-field">
+                            <label class="labels font-label">Phone</label>
+                            <input type="text" class="form-control" value="{{ row.Phone }}" readonly>
+                          </div>
+                          <div class="col-md-12 row-field">
+                            <label class="labels font-label">Date de Naissance</label>
+                            <input type="text" class="form-control" placeholder="enter address line 2" value="{{ row.Date_de_Naissance }}" readonly>
+                          </div>
+                          <div class="col-md-12 row-field">
+                            <label class="labels font-label">Email ID</label>
+                            <input type="text" class="form-control" placeholder="enter address line 2" value="{{ row.Email }}">
+                          </div>
+                          <div class="col-md-12 row-field">
+                            <label class="labels font-label">Address</label>
+                            <input type="text" class="form-control" placeholder="enter email id" value="{{ row.Address }}">
+                          </div>
+                        </div>
+                        <div class="row mt-2 balise">
+                          <div class="col-md-6"><label class="labels font-label">Piéce d'identité</label><input type="text" class="form-control" value="{{ row.Piece_identite }}" readonly></div>
+                          <div class="col-md-6"><label class="labels font-label">N° piéce d'identité</label><input type="text" class="form-control" value="{{ row.N_piece_identite }}" readonly></div>
+                        </div>
+                        <div class="mt-5 text-center"><button class="btn btn-primary profile-button" type="button">Save Profile</button></div>     
+                      </ng-container>
+                      <ng-container *ngSwitchCase="'password'">
+                        <!-- <app-password-form></app-password-form> -->
+                        <div class="row mt-3">
+                          <div class="col-md-12 row-field">
+                            <label class="labels font-label">Nouvel Password</label>
+                            <input type="text" class="form-control" placeholder="Inserer le Nouvel Password" value="" >
+                          </div>
+                          <div class="col-md-12 row-field">
+                            <label class="labels font-label" style="padding-top: 30px;">Confirmation de Nouvel Password</label>
+                            <input type="text" class="form-control" placeholder="Confirmer le Nouvel Password" value="" >
+                          </div>
+                          <div class="col-md-12 row-field" style="padding-top: 130px;">
+                            <label class="labels font-label">Password</label>
+                            <input type="text" class="form-control" placeholder="Inserer le Password Actuel" value="">
+                          </div>
+                        </div>
+                        <div class="mt-5 text-center"><button class="btn btn-primary profile-button" type="button">Save Profile</button></div>     
+
+                      </ng-container>
+                      <ng-container *ngSwitchCase="'security'">
+                        <!-- <app-security-form></app-security-form> -->
+                      </ng-container>
+                      <ng-container *ngSwitchCase="'demands'">
+                        <!-- <app-demands-form></app-demands-form> -->
+                      </ng-container>
+                      <ng-container *ngSwitchCase="'notifications'">
+                        <!-- <app-notifications-form></app-notifications-form> -->
+                      </ng-container>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 </div>
+
+

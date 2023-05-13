@@ -18,6 +18,9 @@ import { ClientSettingComponent } from './client-setting/client-setting.componen
 import { ClientSettingAccountFormComponent } from './client-setting-account-form/client-setting-account-form.component';
 import { ClientCompteComponent } from './client-compte/client-compte.component';
 
+import { ClientNewPasswordComponent } from './client-new-password/client-new-password.component';
+import { ClientProfileComponent } from './client-profile/client-profile.component';
+import { AgentProfileComponent } from './agent-profile/agent-profile.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +38,10 @@ import { ClientCompteComponent } from './client-compte/client-compte.component';
     AdminLoginComponent,
     ClientCompteComponent,
     ClientSettingComponent,
-    ClientSettingAccountFormComponent
+    ClientSettingAccountFormComponent,
+    ClientNewPasswordComponent,
+    ClientProfileComponent,
+    AgentProfileComponent
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],

@@ -1,0 +1,83 @@
+<div class="container-fluid agent">
+  <!-- nav bar -->
+  <app-nav-bar></app-nav-bar>
+  <!-- slide bar -->
+  <div class="container-fluid">
+    <div class="row no-gutters">
+      <div class="side col-12 col-md-2">
+        <app-agent-nav-menu></app-agent-nav-menu>
+      </div>
+      <div class="col-12 col-md-10">
+        <div class="content">
+          <!--TODO your title -->
+          <h2>Profil</h2>
+          <div>
+            <div class="content2">
+              <!-- TODO add contient -->
+              <section>
+                <div class="container-fluid custom-container ">
+                  <div class="row d-flex justify-content-center">
+                    <div class="col col-lg-8 mb-4 mb-lg-0">
+                      <div class="card mb-3" style="border-radius: .5rem;">
+                        <div class="row g-0">
+                          <div class="col-md-4 gradient-custom text-center text-white"
+                            style="border-top-left-radius: .5rem; border-bottom-left-radius: .5rem;" *ngFor="let row of myTableData" >
+                            <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava1-bg.webp"
+                              alt="Avatar" class="img-fluid my-5" style="width: 120px; padding-top: 70px;" />
+                            <h5>{{ row.Nom }} {{ row.Prenom }}</h5>
+                            <p style="color: white;">{{ row.Phone }}</p>
+                            <i class="far fa-edit mb-5"></i>
+                          </div>
+                          <div class="col-md-8">
+                            <div class="card-body p-4">
+                              <h6  class="font-h6">Information</h6>
+                              <hr class="mt-0 mb-4">
+                              <div class="row pt-1" *ngFor="let row of myTableData">
+                                <div class="col-6 mb-4">
+                                  <h6>Nom</h6>
+                                  <p class="text-muted">{{ row.Nom }}</p>
+                                </div>
+                                <div class="col-6 mb-3" style="padding-left: 40px;">
+                                  <h6>Prenom</h6>
+                                  <p class="text-muted">{{ row.Prenom }}</p>
+                                </div>
+                                <div class="col-6 mb-4">
+                                  <h6>Email</h6>
+                                  <p class="text-muted">{{ row.Email }}</p>
+                                </div>
+                                <div class="col-6 mb-3" style="padding-left: 40px;">
+                                  <h6>Phone</h6>
+                                  <p class="text-muted">{{ row.Phone }}</p>
+                                </div>
+                                <div class="col-6 mb-4">
+                                  <h6>Piéce d'identité</h6>
+                                  <p class="text-muted">{{ row.Piece_identite }}</p>
+                                </div>
+                                <div class="col-6 mb-3" style="padding-left: 40px;">
+                                  <h6>N° piéce d'identité</h6>
+                                  <p class="text-muted">{{ row.N_piece_identite }}</p>
+                                </div>
+                                <div class="col-6 mb-4">
+                                  <h6>Date de Naissance</h6>
+                                  <p class="text-muted">{{ row.Date_de_Naissance }}</p>
+                                </div>
+                                <div class="col-6 mb-3" style="padding-left: 40px;">
+                                  <h6>Address</h6>
+                                  <p class="text-muted">{{ row.Address }}</p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
