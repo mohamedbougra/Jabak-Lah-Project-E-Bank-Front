@@ -9,6 +9,8 @@ import { AgentComponent } from "./agent/agent.component";
 import { AdminComponent } from "./admin/admin.component";
 import { ClientNewPasswordComponent } from "./client-new-password/client-new-password.component";
 import{ClientFactureComponent} from "./client-facture/client-facture.component";
+import{AgentListComponent} from "./agent-list/agent-list.component";
+ import{AdminListComponent} from"./admin-list/admin-list.component";
 const routes: Routes = [
   { path: "", component: HomeComponent },
   { path: "login", component: LoginComponent },
@@ -19,6 +21,8 @@ const routes: Routes = [
   { path: "adminHome", component: AdminComponent },
   { path: "new-password", component: ClientNewPasswordComponent },
   {path:"facture",component:ClientFactureComponent},
+  {path:"listClient",component:AgentListComponent},
+  {path:"listAgent",component:AdminListComponent},
 ];
 
 @NgModule({
